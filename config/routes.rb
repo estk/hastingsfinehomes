@@ -2,7 +2,14 @@ Hastingsco::Application.routes.draw do
   
   root :to => 'pages#home' 
   
-  resources 'pages'
+  match '/projects', :to =>     'pages#projects' 
+  match '/testamonials', :to => 'pages#testamonials'
+  match '/history', :to =>      'pages#history' 
+  match '/contact', :to =>      'pages#contact' 
+  match '/partners', :to =>     'pages#partners' 
+  
+  
+ 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
