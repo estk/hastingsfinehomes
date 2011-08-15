@@ -7,8 +7,13 @@
     = csrf_meta_tags
 
   %body
-
-    = yield
-    
-    = render :partial => 'layouts/ga' if ENV == 'production'
+    .container_12
+      render 'layouts/header'
+              
+      #content
+        = yield
+        
+      = render 'layouts/footer'
+      = render debug(params) if Rails.env.development?
+      = render 'layouts/ga'  if Rails.env.production?
 
