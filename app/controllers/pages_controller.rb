@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
   def home
     @title = nil
-    
   end
 
   def projects
@@ -9,7 +8,7 @@ class PagesController < ApplicationController
   end
 
   def testimonials
-    @title = 'Testamonials'
+    @title = 'Testimonials'
   end
 
   def history

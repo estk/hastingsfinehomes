@@ -3,7 +3,7 @@ Hastingsco::Application.routes.draw do
   root :to => 'pages#home' 
   
   match '/projects', :to =>     'pages#projects' 
-  match '/testamonials', :to => 'pages#testamonials'
+  match '/testimonials', :to => 'pages#testimonials'
   match '/history', :to =>      'pages#history' 
   match '/contact', :to =>      'pages#contact' 
   match '/partners', :to =>     'pages#partners' 

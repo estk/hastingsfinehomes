@@ -1,17 +1,5 @@
 %header
   = link_to logo, root_path, :class => "grid_3"
-  %nav.grid_9
-    %ol
-      %a(href="/")
-        %li Home
-      %a(href="/projects")
-        %li Projects
-      %a(href="/testamonials")
-        %li Testamonials
-      %a(href="/history")
-        %li History
-      %a(href="/contact")
-        %li Contact
-      %a(href="/partners")
-        %li Partners
+  %nav.grid_9.bottom
+    = render 'layouts/nav'
   .clear
