@@ -45,6 +45,8 @@ GEM
     erubis (2.7.0)
     execjs (1.2.4)
       multi_json (~> 1.0)
+    flickraw (0.8.4)
+      json (>= 1.1.1)
     haml (3.1.2)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -117,6 +119,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.1.0.rc)
+  flickraw
   haml-rails
   jquery-rails
   json
