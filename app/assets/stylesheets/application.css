@@ -11,5 +11,6 @@ footer { margin: 20px 0 40px 0; }
 .right { text-align: right; }
 #slideshow { height: 550px;
 			 color: white;
-	 		 background-image: url('http://farm4.static.flickr.com/3198/3146308832_5fdec3751b_o.jpg');
 }
+.slide.first { display: inline; }
+.slide { display: none; }

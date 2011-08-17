@@ -1,4 +1,4 @@
-#slideshow.grid_12
-  %ul
-    - photos.each do |photo|
-      %li photo.url
+#slideshow
+  =image_tag FlickRaw.url_b( photos.first ), :class => 'slide first', :width => 960, :height => 550
+  - photos.each do |photo|
+    = image_tag FlickRaw.url_b( photo ), :class => 'slide', :width => 960, :height => 550

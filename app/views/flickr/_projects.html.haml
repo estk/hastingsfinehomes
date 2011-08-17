@@ -1,4 +1,3 @@
-#gallery.grid_12
-  %ul
-    - photos.each do |photo|
-      %li photo.url
+#gallery
+  - photos.each do |photo|
+    = image_tag FlickRaw.url_m( photo ), :width => 240, :height => 240
