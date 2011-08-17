@@ -10,3 +10,4 @@ doc/
 .project
 .DS_Store
 *.tmproj
+*.sublime-project

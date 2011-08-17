@@ -3,14 +3,16 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
+ *= require normalize
+ *= require 960
+ *= require slides 
  *= require_tree . 
 */
 
 header { margin: 40px 0 20px 0;}
+body { background-image:url(/assets/wood-bg.jpg);}
 footer { margin: 20px 0 40px 0; }
 .right { text-align: right; }
-#slideshow { height: 550px;
-			 color: white;
-}
+#slideshow { color: white; }
 .slide.first { display: inline; }
 .slide { display: none; }
