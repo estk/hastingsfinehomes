@@ -7,9 +7,20 @@ nav {
 		
 		li {
 			display:inline;
-			margin-left:10px;
+			margin-left:15px;
 			padding-left:0px;
-		
 		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+
+		}
+
+		a:visited {
+			color: #fff;
+			text-decoration: none;
+		}
+
 	}
 }
