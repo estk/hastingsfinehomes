@@ -10,7 +10,7 @@
 */
 
 header { margin: 40px 0 20px 0;}
-body { background-image:url(/assets/wood-bg.jpg);}
+/*body { background-image:url(/assets/wood-bg.jpg);}*/
 footer { margin: 20px 0 40px 0; }
 .right { text-align: right; }
 #slideshow { color: white; }
