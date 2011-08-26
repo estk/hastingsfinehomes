@@ -13,6 +13,13 @@ header { margin: 40px 0 20px 0;}
 /*body { background-image:url(/assets/wood-bg.jpg);}*/
 footer { margin: 20px 0 40px 0; }
 .right { text-align: right; }
-#slideshow { color: white; }
-.slide.first { display: inline; }
 .slide { display: none; }
+
+#gallery img {
+	background: white;
+	padding: 10px;
+	margin: 27px;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+
