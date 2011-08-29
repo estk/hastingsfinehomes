@@ -1,3 +1,5 @@
 #gallery
   - photos.each do |photo|
-    = image_tag FlickRaw.url_m( photo ), :width => 240, :height => 240
+    %a{ :class => "fancybox", :rel => photo.title, :href => FlickRaw.url_m( photo ) }
+      = image_tag FlickRaw.url_m( photo ), :width => 240, :height => 240
+      = render_flickr_fancybox(photo.title)

@@ -14,6 +14,13 @@ module FlickrHelper
       render :partial => '/flickr/projects', :locals => { :photos => photos }
     end
   end
+
+  def render_flickr_fancybox(tag)
+    rescue_flickr do
+      photos = get_photo_tags(tag)
+      render :partial => '/flickr/fancybox', :locals => { :photos => photos }
+    end
+  end
   
   private
     

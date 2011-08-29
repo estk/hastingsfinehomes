@@ -7,6 +7,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require slides.min.jquery.js
+//= require jquery.fancybox-1.3.4.pack.js
 //= require_tree .
 
 $(function(){
@@ -17,4 +18,22 @@ $(function(){
     effect: 'fade',
     crossfade: true
   });
+});
+
+$(document).ready(function() {
+
+	/* Apply fancybox to multiple items */
+	
+	$("a.fancybox").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	true,
+		'titlePosition' :   'over',
+        'titleFormat'   :   function(title, currentArray, currentIndex, currentOpts) {
+            return '<span id="fancybox-title-over">' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+        }
+	});
+	
 });
