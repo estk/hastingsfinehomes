@@ -6,7 +6,7 @@ Hastingsco::Application.routes.draw do
   match '/testimonials', :to => 'pages#testimonials'
   match '/history', :to =>      'pages#history' 
   match '/contact', :to =>      'pages#contact' 
-  match '/partners', :to =>     'pages#partners' 
+  match '/resources', :to =>     'pages#resources' 
   
   
  

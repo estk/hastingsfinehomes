@@ -11,3 +11,4 @@ doc/
 .DS_Store
 *.tmproj
 *.sublime-project
+*.chproj

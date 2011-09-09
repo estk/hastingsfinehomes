@@ -20,8 +20,8 @@ class PagesController < ApplicationController
     @title = 'Contact'
   end
 
-  def partners
-    @title = 'Partners'
+  def resources
+    @title = 'Resources'
   end
 
 end
