@@ -1,3 +1,97 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "960";
+
+header { margin: 40px 0 20px 0;}
+footer {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.slide { display: none; }
+
+#content img {
+	background: white;
+	padding: 10px;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+
+#gallery img {
+	margin: 27px;
+}
+
+.img{
+	float:left ;
+	text-align: center;
+}
+
+/*.title { 
+	position: relative;
+	margin-left: 37px;
+	width: 240px;
+	top: -62px;
+	z-index: 10;
+	background: rgba(0,0,0,.6);
+	padding: 2px 0;
+	color:#eee;
+}*/
+.title,
+.fancybox-gallery {
+	display:none;
+}
+
+#project-photos { display: none; }
+
+h1 { margin-left: 10px; }
+article p { padding-left: 10px; }
+
+
+.image-container { @include grid(4); }
+.content { @include grid(8); }
+.signature { text-align: right; }
+
+.blurb { @include grid(4); }
+
+#logo { @include grid(4); }
+
+
+.container { @include container_12; }
+header nav { margin-left: 49%; }
+footer nav { margin-left: auto; margin-right: auto; width: 52%; }
+
+
+
+
+
+/*------------------------------------------*/
+
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:before,
+.clearfix:after,
+.container_12:before,
+.container_12:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after,
+.container_12:after {
+  clear: both;
+}

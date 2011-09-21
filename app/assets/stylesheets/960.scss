@@ -1,0 +1,26 @@
+body{ text-align:center; }
+
+@mixin container_12{
+  text-align:left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+@mixin alpha{ margin-left:0; }
+@mixin omega{ margin-right:0; }
+
+@mixin grid($columns){
+  display:inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: $columns*60px + ($columns - 1)*20px;
+}
+
+@mixin prefix($columns){ padding-left: $columns*80px; }
+@mixin suffix($columns){ padding-right: $columns*80px; }
+
+@mixin push($columns){ position:relative; left: $columns*80px; }
+@mixin pull($columns){ position:relative; left: $columns*(-80px); }
