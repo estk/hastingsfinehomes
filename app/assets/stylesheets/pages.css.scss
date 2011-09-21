@@ -4,7 +4,12 @@
 
 @import "960";
 
-header { margin: 40px 0 20px 0;}
+header { 
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 footer {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -21,6 +26,7 @@ footer {
 #gallery img {
 	margin: 27px;
 }
+a.fancybox { text-decoration: none; }
 
 .img{
 	float:left ;
@@ -54,11 +60,11 @@ article p { padding-left: 10px; }
 
 .blurb { @include grid(4); }
 
-#logo { @include grid(4); }
+#logo {  }
 
 
 .container { @include container_12; }
-header nav { margin-left: 49%; }
+header nav { bottom: 0; right: 0; display: inline-block; position: absolute; }
 footer nav { margin-left: auto; margin-right: auto; width: 52%; }
 
 

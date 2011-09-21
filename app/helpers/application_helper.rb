@@ -10,7 +10,7 @@ module ApplicationHelper
     end
     
     def logo
-        image_tag("logo.png", :alt => "The Hastings Co.")
+        image_tag("logo.png", :height => 75, :alt => "The Hastings Co.")
     end
     
 end
