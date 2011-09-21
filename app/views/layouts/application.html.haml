@@ -14,9 +14,6 @@
       = render 'layouts/header'
 
       %section#content
-        - unless @title.nil?
-          %h1= @title
-
         = yield
 
       = render 'layouts/footer'

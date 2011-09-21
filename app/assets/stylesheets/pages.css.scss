@@ -61,6 +61,10 @@ article p { padding-left: 10px; }
 .blurb { @include grid(4); }
 
 #logo {  }
+a { 
+  display: inline-block;
+  img { margin-bottom: -4px; }
+}
 
 
 .container { @include container_12; }
