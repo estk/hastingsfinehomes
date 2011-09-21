@@ -10,15 +10,15 @@
     = csrf_meta_tags
 
   %body
-    .container_12
+    .container
       = render 'layouts/header'
-              
+
       #content
         - unless @title.nil?
           %h1= @title
-          
+
         = yield
-        
+
       = render 'layouts/footer'
 
       = render 'layouts/ga'  if Rails.env.production?
