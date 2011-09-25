@@ -4,7 +4,7 @@
 
 @import "960";
 
-header { 
+header {
   position: relative;
   margin-bottom: 20px;
   nav {
@@ -24,8 +24,11 @@ footer {
     width: 52%;
   }
 }
+// #E1E1E1 -- #e0e2d5
+body {
+  background: #ebedde;
 
-body { background: #E1E1E1; }
+}
 
 #content {
   img {
