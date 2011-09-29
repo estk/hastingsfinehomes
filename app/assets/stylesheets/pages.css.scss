@@ -2,7 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "960";
+body {
+  background: #ebedde;
+  font-family: 'Quattrocento', serif;
+  
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #content img {
+    background: white;
+    padding: 10px;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  }
+  
+  article { margin-left: 20px; margin-right: 20px; }
+}
 
 header {
   position: relative;
@@ -24,92 +41,69 @@ footer {
     width: 52%;
   }
 }
-// #E1E1E1 -- #e0e2d5
-body {
-  background: #ebedde;
-  font-family: 'Quattrocento', serif;
-}
-
-#content {
-  img {
-	  background: white;
-  	padding: 10px;
-  	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  }
-}
-
-.slide { display: none; }
-
-#gallery img {
-	margin: 27px;
-}
-
-a.fancybox { text-decoration: none; }
-
-.img{
-	float:left ;
-	text-align: center;
-}
-
-
-.title,
-.fancybox-gallery {
-	display:none;
-}
-
-#project-photos { display: none; }
-
-h1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.image-container { @include grid(4); }
-.content { @include grid(8); }
-.signature { text-align: right; }
-
-.blurb { @include grid(4); }
-
-a { 
-  display: inline-block;
-  img { margin-bottom: -4px; }
-}
-
 
 .container { 
-  @include container_12;
+  text-align:left;
   background: white;
   padding: 20px 20px;
   margin-top: 40px;
   margin-bottom: 40px;
-  // border-radius: 5px;
-  // -moz-border-radius: 5px;
-  // -moz-box-shadow: 0 0 5px 5px #888;
-  // -webkit-box-shadow: 0 0 5px 5px#888;
-  // box-shadow: 0 0 5px 5px #CCC;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
 }
 
+// home
+
+.slide { display: none; }
+
+#blurbs { margin: 0; }
+.blurb {
+  width: 297px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+// projects
+
+#gallery {
+  a { 
+    display: inline-block;
+    text-decoration: none
+    }
+  img {
+      margin: 27px;
+//      margin-bottom: -4px;
+  }
+  .project-photos { display: none; }
+  .title, .fancybox-gallery {	display:none; }
+}
+
+// history
+
+.sidebar { 
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+}
+.history {
+  width: 570px;
+  vertical-align: top;
+  display: inline-block;
+}
+.signature { text-align: right; }
+
+// contact
 
 table td {
   padding: 10px 20px;
 }
 
-/*.title { 
-	position: relative;
-	margin-left: 37px;
-	width: 240px;
-	top: -62px;
-	z-index: 10;
-	background: rgba(0,0,0,.6);
-	padding: 2px 0;
-	color:#eee;
-}*/
-
-
 
 /*------------------------------------------*/
-
+//      utilitys
 
 .clear {
   clear: both;
@@ -120,21 +114,3 @@ table td {
   height: 0;
 }
 
-.clearfix:before,
-.clearfix:after,
-.container_12:before,
-.container_12:after {
-  content: '.';
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  font-size: 0;
-  line-height: 0;
-  width: 0;
-  height: 0;
-}
-
-.clearfix:after,
-.container_12:after {
-  clear: both;
-}
