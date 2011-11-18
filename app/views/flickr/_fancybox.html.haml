@@ -1,3 +1,3 @@
 - photos.each do |photo|
-  %a{ :class => "fancybox, project-photos", :href => FlickRaw.url_m( photo ), :rel => flickr.photos.getInfo( :photo_id => photo.id ).tags.first.to_s }
-    = image_tag FlickRaw.url_m( photo )
+  %a{ :class => "fancybox", :style => "display: none;" , :href => FlickRaw.url_b( photo ), :rel => flickr.photos.getInfo( :photo_id => photo.id ).tags.first.to_s }
+    = image_tag FlickRaw.url_b( photo ) # aparently unnesessary
