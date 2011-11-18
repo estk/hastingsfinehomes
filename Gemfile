@@ -11,7 +11,7 @@ gem 'haml-rails'
 
 gem 'pg'
 
-gem 'flickraw'
+gem 'flickraw-cached'
 
 # Gems used only for assets and not required
 # in production environments by default.
