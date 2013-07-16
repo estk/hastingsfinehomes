@@ -4,6 +4,7 @@ module FlickrHelper
   def render_flickr_slideshow
     rescue_flickr do
       photos = get_photo_tags('home')
+      config.log (photos)
       render :partial => '/flickr/slideshow', :locals => { :photos => photos }
     end
   end

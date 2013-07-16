@@ -12,12 +12,12 @@
 
 $(function(){
   $("#slides").slidesjs({
-    play: 5000,
-    pause: 2500,
-    navigation: true,
-    hoverPause: true,
-    effect: 'fade',
-    crossfade: true
+    width: 940,
+    height: 550,
+    navigation: false,
+    play: {
+      effect: "slide"
+    }
   });
 });
 
