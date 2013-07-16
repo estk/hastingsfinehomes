@@ -16,7 +16,13 @@ $(function(){
     height: 550,
     navigation: false,
     play: {
-      effect: "slide"
+      auto: true,
+      effect: "fade",
+      interval: 5000
+    },
+    pagination: {
+      active: true,
+      effect: "fade"
     }
   });
 });
