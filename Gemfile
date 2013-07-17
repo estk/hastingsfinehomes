@@ -21,6 +21,10 @@ group :assets do
   gem 'uglifier'
 end
 
+group :production do 
+  gem 'unicorn'
+end
+
 gem 'jquery-rails'
 
 group :development, :test do
