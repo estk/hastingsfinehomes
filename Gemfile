@@ -3,8 +3,7 @@ ruby "1.9.3"
 
 gem 'rails', ">= 3.1.0"
 
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
+gem 'rails_12factor', group: :production
 
 gem 'json'
 
