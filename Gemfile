@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
+ruby "1.9.3"
 
 gem 'rails', ">= 3.1.0"
 
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
+gem 'rails_12factor', group: :production
 
 gem 'json'
 
@@ -26,13 +26,4 @@ gem 'jquery-rails'
 group :development, :test do
   gem 'sqlite3'
 end
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug'
 

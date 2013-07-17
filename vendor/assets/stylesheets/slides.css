@@ -5,23 +5,16 @@
 */
 
 #slides {
-
+  display: none;
 }
 
-/*
-	Slides container
-	Important:
-	Set the width of your slides container
-	Set to display none, prevents content flash
-*/
-
-.slides_container {
-	width:940px;
-	overflow:hidden;
-	position:relative;
-	display:none;
+#slides {
+  overflow: hidden;
+  width:940px;
+  height: 570px;
 	background: white;
 	padding: 10px;
+  margin: 0 3px;
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 }
@@ -34,38 +27,41 @@
 	Set to display block
 */
 
-.slides_container a {
-	width:940px;
-	height:550px;
-	display:block;
+#slides img {
+  width: 940px;
+  height: 550px;
+  padding: 0 !important;
+  margin: 0 !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
 }
 
-.slides_container a img {
-	display:block;
-	width: 940px;
-	height: 550px;
-	padding: 0 !important;
-	-webkit-box-shadow: none !important;
-	-moz-box-shadow: none !important;
-}
+/*.slides_container a img {
+  display:block;
+  width: 940px;
+  height: 550px;
+  padding: 0 !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+}*/
 
 
 /*
 	Pagination
 */
 
-.pagination {
-	margin:20px auto 0;
+.slidesjs-pagination {
+	margin:10px auto 0;
 	width:100px;
 }
 
-.pagination li {
+.slidesjs-pagination li {
 	float:left;
 	margin:0 1px;
 	list-style:none;
 }
 
-.pagination li a {
+.slidesjs-pagination li a {
 	display:block;
 	width:12px;
 	height:0;
@@ -76,6 +72,6 @@
 	overflow:hidden;
 }
 
-.pagination li.current a {
+.slidesjs-pagination li a.active {
 	background-position:0 -12px;
 }

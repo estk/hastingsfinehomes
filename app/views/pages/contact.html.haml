@@ -1,34 +1,21 @@
-- unless @title.nil?
-  %h1= @title
-%table
-  %tr
-    %td
-      Licence:
-    %td
-      :plain
-        #291850
-  %tr
-    %td
-      Office:
-    %td
-      ( 650 ) 960 - 1750
-      
-  %tr
-    %td
-      Fax:
-    %td
-      ( 650 ) 960 - 1770
-      
-  %tr
-    %td
-      Email:
-    %td
-      %a{:href => "mailto:tom@thehastingscompany.com"}
-        tom@thehastingscompany.com
-  %tr
-    %td
-      Address:
-    %td
-      The Hastings Company<br />
-      4496 El Camino Real #108<br />
-      Los Altos, CA 94022
+/ - unless @title.nil?
+/   %h1= @title
+%div.contacts
+  %div.info 
+    %p Hastings Fine Homes, Inc
+    %p General Contractor
+    %p Licence #973013
+    %p info@hastingsfinehomes.com
+  %div.addresses
+    %div.address
+      %p 63 Boved Road #404
+      %p San Mateo, Ca 94402
+      %p 650.350.1066
+    %div.address
+      %p 696 San Ramon Valley Blvd. #507
+      %p Danville, Ca 94526
+      %p 925.838.0108
+  %div.contact
+    %p Tom Hastings
+    %p President
+  

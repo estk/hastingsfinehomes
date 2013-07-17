@@ -6,17 +6,24 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require slides.min.jquery.js
-//= require jquery.fancybox-1.3.4.pack.js
+//= require jquery.slides.js
+//= require jquery.fancybox.js
 //= require_tree .
 
 $(function(){
-  $("#slides").slides({
-    play: 5000,
-    pause: 2500,
-    hoverPause: true,
-    effect: 'fade',
-    crossfade: true
+  $("#slides").slidesjs({
+    width: 940,
+    height: 550,
+    navigation: false,
+    play: {
+      auto: true,
+      effect: "fade",
+      interval: 5000
+    },
+    pagination: {
+      active: true,
+      effect: "fade"
+    }
   });
 });
 
