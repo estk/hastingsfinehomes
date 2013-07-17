@@ -23,7 +23,24 @@ body {
 
 header {
   position: relative;
-  margin-bottom: 20px;
+//  margin-bottom: 20px;
+  #logo {
+    text-decoration: none;
+    span {
+      vertical-align: middle;
+      display: inline-block;
+      font-size: 350%;
+      line-height: 1em;
+      margin: .25em;
+      color: black;
+    }
+  }
+  #contact-top {
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+  }
   nav {
     bottom: 0;
     right: 0;
@@ -45,7 +62,7 @@ footer {
 body>.container { 
   text-align:left;
   background: white;
-  padding: 20px 20px;
+  padding: 0 20px;
   margin-top: 40px;
   margin-bottom: 40px;
   margin-left: auto;

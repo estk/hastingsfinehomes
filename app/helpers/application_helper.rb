@@ -9,8 +9,11 @@ module ApplicationHelper
       end
     end
     
-    def logo
-        image_tag("logo.png", :height => 75, :alt => "The Hastings Co.")
-    end
+    # def logo
+    #     image_tag("logo.png", :height => 75, :alt => "The Hastings Co.")
+    # end
     
+    def logo
+      content_tag(:span, "HASTINGS FINE HOMES", class: "logo")
+    end
 end
