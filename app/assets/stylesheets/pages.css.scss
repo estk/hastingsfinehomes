@@ -27,6 +27,7 @@ header {
   #logo {
     text-decoration: none;
     span {
+      vertical-align: middle;
       display: inline-block;
       font-size: 350%;
       line-height: 1em;
@@ -37,6 +38,7 @@ header {
   #contact-top {
     margin: auto;
     display: inline-block;
+    vertical-align: middle;
     padding: 20px;
   }
   nav {
