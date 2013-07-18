@@ -2,17 +2,21 @@ module FlickrHelper
   FLICKR_ID = "66318963@N07"
   
   def render_flickr_slideshow
-    rescue_flickr do
-      photos = get_photo_tags('home')
-      config.log (photos)
-      render :partial => '/flickr/slideshow', :locals => { :photos => photos }
+    Rails.cache.fetch("flickr/slideshow", :expires_in => 5.minutes) do
+      rescue_flickr do
+        photos = get_photo_tags('home')
+        config.log (photos)
+        render :partial => '/flickr/slideshow', :locals => { :photos => photos }
+      end
     end
   end
   
   def render_flickr_projects
-    rescue_flickr do
-      photos = get_photo_tags('pilot')
-      render :partial => '/flickr/projects', :locals => { :photos => photos }
+    Rails.cache.fetch("flickr/projects", :expires_in => 5.minutes) do
+      rescue_flickr do
+        photos = get_photo_tags('pilot')
+        render :partial => '/flickr/projects', :locals => { :photos => photos }
+      end
     end
   end
 

@@ -22,6 +22,8 @@ group :assets do
 end
 
 group :production do 
+  gem 'memcachier'
+  gem 'dalli'
   gem 'unicorn'
   gem 'rails_12factor' #static assets and logging on heroku
 end
