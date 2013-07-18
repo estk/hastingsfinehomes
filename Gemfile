@@ -25,6 +25,7 @@ end
 
 group :production do 
   gem 'unicorn'
+  gem 'rails_12factor' #static assets and logging on heroku
 end
 
 gem 'jquery-rails'
