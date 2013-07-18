@@ -13,6 +13,8 @@ gem 'pg'
 
 gem 'flickraw-cached'
 
+  gem 'newrelic_rpm'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
