@@ -5,7 +5,6 @@ module FlickrHelper
     Rails.cache.fetch("flickr/slideshow", :expires_in => 5.minutes) do
       rescue_flickr do
         photos = get_photo_tags('home')
-        config.log (photos)
         render :partial => '/flickr/slideshow', :locals => { :photos => photos }
       end
     end
@@ -32,7 +31,7 @@ module FlickrHelper
     def get_photo_tags(*tags)
       FlickRaw.api_key ||= "f21b3b897a9c08dd4f07f00ca4fdc3f4"
       FlickRaw.shared_secret ||= "c3ac43cfeb6841eb"
-      flickr.photos.search(:user_id => FLICKR_ID, :tags => tags)
+      flickr.photos.search(:user_id => FLICKR_ID, :tags => tags, :extras => "description")
     end
     
     def rescue_flickr(&blk)

@@ -2,5 +2,7 @@
   #slides
     - photos.each do |photo|
       = link_to FlickRaw.url_photopage( photo ) do
-        = image_tag FlickRaw.url_b( photo )
+        = image_tag FlickRaw.url_b( photo ), :title => photo.description
+        %span.description= photo.description
+
 .clear
