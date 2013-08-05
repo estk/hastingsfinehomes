@@ -26,13 +26,17 @@ module FlickrHelper
     end
   end
   
-  private
+  def get_photo_tags(*tags)
+    FlickRaw.api_key ||= "f21b3b897a9c08dd4f07f00ca4fdc3f4"
+    FlickRaw.shared_secret ||= "c3ac43cfeb6841eb"
+    flickr.photos.search(:user_id => FLICKR_ID, :tags => tags, :extras => "description")
+  end
+  
+  def get_contacts_image()
+    FlickRaw.url_b(get_photo_tags("contacts-page").first)
+  end
     
-    def get_photo_tags(*tags)
-      FlickRaw.api_key ||= "f21b3b897a9c08dd4f07f00ca4fdc3f4"
-      FlickRaw.shared_secret ||= "c3ac43cfeb6841eb"
-      flickr.photos.search(:user_id => FLICKR_ID, :tags => tags, :extras => "description")
-    end
+  private
     
     def rescue_flickr(&blk)
       blk.call
